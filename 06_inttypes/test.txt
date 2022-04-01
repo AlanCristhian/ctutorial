@@ -1,6 +1,0 @@
-Decimals: 200 300
-More Decimals: 20000 30000
-Octals: 144 0144
-Hexadecimals: 64 0x64 64 0X64
-Padded number = 00089
-Number with Width =    89
