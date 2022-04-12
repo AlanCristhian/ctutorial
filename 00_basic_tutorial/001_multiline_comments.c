@@ -1,7 +1,10 @@
+/* Example of multiline comments. */
+
+
 #include <stdio.h>
 
-int main()
-{
+
+int main(void) {
   /*
   Print
   Message

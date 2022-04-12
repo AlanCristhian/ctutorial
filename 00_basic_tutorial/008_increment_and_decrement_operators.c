@@ -1,9 +1,10 @@
 /* Increment and decrement operators in C example. */
 
+
 #include <stdio.h>
 
-int main()
-{
+
+int main(void) {
   int x = 10, y = 20;
 
   printf("---- INCREMENT OPERATOR EXAMPLE ----\n");

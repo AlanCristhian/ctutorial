@@ -1,7 +1,10 @@
+/* Example of arimthmetic operators. */
+
+
 #include <stdio.h>
 
-int main()
-{
+
+int main(void) {
   int a= 24, b = 4;
   int addition, subtraction, multiplication, division, modulus;
 

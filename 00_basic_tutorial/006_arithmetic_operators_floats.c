@@ -1,9 +1,10 @@
 /* C Program to perform division and modulus on float data type */
 
+
 #include <stdio.h>
 
-int main()
-{
+
+int main(void) {
   int a = 7, b = 3;
   int integerdiv, modulus;
   float floatdiv;

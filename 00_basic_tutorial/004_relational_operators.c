@@ -1,7 +1,10 @@
+/* Example of relational operators. */
+
+
 #include <stdio.h>
 
-main()
-{
+
+int main(void) {
   int a = 35;
   int b = 16;
 
@@ -11,4 +14,6 @@ main()
   printf("%d <  %d: %d\n", a, b, a < b);
   printf("%d == %d: %d\n", a, b, a == b);
   printf("%d != %d: %d\n", a, b, a != b);
+
+  return 0;
 }

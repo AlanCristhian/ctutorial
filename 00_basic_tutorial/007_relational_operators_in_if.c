@@ -1,9 +1,10 @@
 /* Using C relational operators in if condition */
 
+
 #include <stdio.h>
 
-void main()
-{
+
+int main(void) {
   int x = 10;
   int y = 25;
 
@@ -12,4 +13,6 @@ void main()
   } else {
     printf("x is not equal to y\n");
   }
+
+  return 0;
 }

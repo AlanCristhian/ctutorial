@@ -1,9 +1,10 @@
 /* Increment and Decrement Operators in C as Prefix and Postfix */
 
+
 #include <stdio.h>
 
-int main()
-{
+
+int main(void) {
   int x = 10, y = 20, a = 5, b = 4;
 
   printf("---- PRE INCREMENT OPERATOR EXAMPLE ----\n");
