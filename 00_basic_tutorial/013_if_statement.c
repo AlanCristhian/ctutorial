@@ -1,9 +1,10 @@
-/* If statement in c programing example */
+/* If statement in c programing example. */
+
 
 #include <stdio.h>
 
-int main()
-{
+
+int main(void) {
   int number;
 
   printf("Enter any integer Value\n");

@@ -1,7 +1,10 @@
+/* Example of all bitwise operators. */
+
+
 #include <stdio.h>
 
-int main()
-{
+
+int main(void) {
   int a = 9, b = 65;
 
   printf("Bitwise AND Operator a&b = %d\n", a&b);

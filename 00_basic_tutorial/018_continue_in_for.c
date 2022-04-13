@@ -1,8 +1,10 @@
 /* Continue statement */
 
+
 #include <stdio.h>
 
-int main() {
+
+int main(void) {
   int i, number;
 
   printf("\nPlease enter any integer\n");

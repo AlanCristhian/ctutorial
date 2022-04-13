@@ -1,7 +1,10 @@
+/* Example of the else statement. */
+
+
 #include <stdio.h>
 
-int main()
-{
+
+int main(void) {
   int marks;
 
   printf("Enter you subject Marks:\n");

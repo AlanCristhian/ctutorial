@@ -1,7 +1,10 @@
+/* Example of the sizeof operator. */
+
+
 #include <stdio.h>
 
-int main()
-{
+
+int main() {
   int a;
   int b[20];
 

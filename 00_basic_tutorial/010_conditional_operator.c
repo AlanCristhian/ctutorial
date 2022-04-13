@@ -1,7 +1,10 @@
+/* Example of the conditional operator. */
+
+
 #include <stdio.h>
 
-int main()
-{
+
+int main(void){
   int age;
 
   printf("Please Enter your age here:\n");
