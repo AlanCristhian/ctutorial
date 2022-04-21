@@ -1,4 +1,4 @@
-/* The <stdio.h> tmpname() function creates a string containing a file name
+/* The <stdio.h> tmpnam() function creates a string containing a file name
    different from the name of any existing file, and stores it in the character
    string pointed to by str. The function is capable o generating up to TMP_MAX
    of unique filenames, but some or all of them may already be in use. If it is
