@@ -24,10 +24,10 @@ void main() {
   long double num6 = strtold(str6, NULL);
 
   // Displaying the result
-  printf("strtold(\"%\") = %.2Lf\n", str1, num1);
-  printf("strtold(\"%\") = %.2Lf\n", str2, num2);
-  printf("strtold(\"%\") = %.2Lf\n", str3, num3);
-  printf("strtold(\"%\") = %.2Lf\n", str4, num4);
-  printf("strtold(\"%\") = %.2Lf\n", str5, num5);
-  printf("strtold(\"%\") = %.2Lf\n", str6, num6);
+  printf("strtold(\"%s\") = %.2Lf\n", str1, num1);
+  printf("strtold(\"%s\") = %.2Lf\n", str2, num2);
+  printf("strtold(\"%s\") = %.2Lf\n", str3, num3);
+  printf("strtold(\"%s\") = %.2Lf\n", str4, num4);
+  printf("strtold(\"%s\") = %.2Lf\n", str5, num5);
+  printf("strtold(\"%s\") = %.2Lf\n", str6, num6);
 }
