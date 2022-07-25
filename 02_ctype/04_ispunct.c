@@ -1,11 +1,18 @@
-/* Example of ispunct function. */
+/* The ispunct() function check if the given character is a punctuation
+   character.
+
+   Syntax:
+     int ispunct(int ch);
+   Parameters:
+     ch: the character to be checked, casted to an int, or EOF.
+*/
 
 
 #include <stdio.h>
 #include <ctype.h>
 
 
-int main() {
+void main() {
   char ch = '!';
 
   if (ispunct(ch)) {
@@ -13,6 +20,4 @@ int main() {
   } else {
     printf("\n%c is not a punctuation character.\n");
   }
-
-  return 0;
 }

@@ -1,11 +1,11 @@
-/* Example of isspace function. */
+/* Second example of the isspace() function. */
 
 
 #include <stdio.h>
 #include <ctype.h>
 
 
-int main() {
+void main() {
   char ch;
 
   printf("Enter any valid character: \n");
@@ -17,6 +17,4 @@ int main() {
     printf("\nThe character is not space.\n");
     printf("I request you to enter the space character.\n");
   }
-
-  return 0;
 }

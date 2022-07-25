@@ -1,11 +1,16 @@
-// isalpha function example.
+/* The isalpha() function check i the given character is alphabetic letter.
+   Syntax:
+     int isalpha(int ch);
+   Parameters:
+     ch: the character to be checked, casted to an int, or EOF.
+*/
 
 
 #include <stdio.h>
 #include <ctype.h>
 
 
-int main() {
+void int main() {
   char ch;
   printf("Enter any valid character:\n");
   scanf("%c", &ch);
@@ -16,5 +21,4 @@ int main() {
     printf("\n%c is not an alphabet", ch);
     printf("\nI request yo to enter a valid alphabet");
   }
-  return 0;
 }

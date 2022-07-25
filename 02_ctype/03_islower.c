@@ -1,11 +1,18 @@
-// Example of the islower function
+/* The islower() function is check if the given character is a lowercase
+   letter.
+
+   Syntax:
+     int islower(int ch);
+   Parameters:
+     ch: the character to be checked, casted to an int, or EOF.
+*/
 
 
 #include <stdio.h>
 #include <ctype.h>
 
 
-int main() {
+void main() {
   char ch;
 
   printf("\nPlease enter any lowercase character.\n");

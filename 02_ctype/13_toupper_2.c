@@ -1,4 +1,4 @@
-/* Example of the toupper function from the ctype.h library */
+/* Second example of the toupper function from the ctype.h library */
 /* Check whether the character is between 'A' and 'Z'. If the condition is
    true, it will convert the given letter to uppercase. */
 
@@ -7,7 +7,7 @@
 #include <ctype.h>
 
 
-int main() {
+void main() {
   char ch;
 
   printf("Please enter any valid character:\n");
@@ -18,6 +18,4 @@ int main() {
   } else {
     printf("Please enter a character that is between 'A' and 'Z'.\n");
   }
-
-  return 0;
 }

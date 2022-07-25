@@ -1,11 +1,18 @@
-/* Example of the isuper function of the ctypes.h library. */
+/* The isupper() function is used to check if the given character is an
+   uppercase letter.
+
+   Syntax:
+     int isupper(ch);
+   Parameters:
+     ch: the character to be checked, casted to an int or EOF.
+*/
 
 
 #include <stdio.h>
 #include <ctype.h>
 
 
-int main() {
+void main() {
   char ch;
   printf("Enter any uppercas character:\n");
   scanf("%c", &ch);
@@ -16,6 +23,4 @@ int main() {
     printf("%c is not an uppercase alphabet\n", ch);
     printf("I request you to enter a valid uppercase character.\n");
   }
-
-  return 0;
 }

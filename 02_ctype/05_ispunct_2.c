@@ -1,11 +1,11 @@
-/* Second example of the ispunct function. */
+/* Second example of the ispunct() function. */
 
 
 #include <stdio.h>
 #include <ctype.h>
 
 
-int main() {
+void main() {
   char ch;
 
   printf("Enter any valid character: ");
@@ -16,6 +16,4 @@ int main() {
   } else {
     printf("\n%c is not a punctuation character.\n");
   }
-
-  return 0;
 }

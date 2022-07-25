@@ -1,12 +1,18 @@
-/* Example of the isxdigit function from the ctype.h library. */
-/* Check if the character entered is an hexadecimal digit. */
+/* The isxdigit() function check if the character entered is an hexadecimal
+   digit.
+
+   Syntax:
+     int isxdigit(int ch);
+   Parameters:
+     ch: the character to be checked, casted to an int or EOF.
+*/
 
 
 #include <stdio.h>
 #include <ctype.h>
 
 
-int main() {
+void main() {
   char ch;
 
   printf("Please enter any hexadecimal character:\n");
@@ -18,6 +24,4 @@ int main() {
     printf("%c is not an hexadecimal character.\n", ch);
     printf("I request you to enter a hexadecimal character.\n");
   }
-
-  return 0;
 }
