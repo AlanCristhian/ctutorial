@@ -1,11 +1,18 @@
-// Example of isdigit function.
+/* The isdigit() function is used to chekc if the given character is a decimal
+   digit or not. Decimal digits are one of the 10 digits.
+
+   Syntax:
+     int isdigit(int ch);
+   Parameters:
+     ch: the character to be checked, casted to an int or EOF.
+*/
 
 
 #include <stdio.h>
 #include <ctype.h>
 
 
-int main() {
+void main() {
   char ch;
 
   printf("\nPlease enter a number:\n");
@@ -16,6 +23,4 @@ int main() {
   } else {
     printf("\nEntered character is not a digit.");
   }
-
-  return 0;
 }
