@@ -53,3 +53,5 @@ dkms.conf
 
 # Custom
 *.sublime-workspace
+a.c
+practice.c
