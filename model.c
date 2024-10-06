@@ -55,3 +55,13 @@ void f() {char a[2] = "a"}; // "a" is stored in the stack
                             // 2 bytes of memory
 void g() {char *b = "b"};   // "b" could be anywhere,
                             // 2 byest of memory plus the size of the pointer.
+int array[3] = {'1', '5', '7'};
+void a_function(int *p);
+void a_function(int p[]);  // same than above
+typedef int Array10[10];      // name: Array; number of elements: 10; type: int
+Array10 arr2d[5];     // makes an array of 5 arrays of 10 integers each
+Array10 *p1d; // makes a pointer to an array of 10 integers
+int (*p1d)[10] == typedef int Array10[10]; Array10 *p1d;
+p1d = &arr2d[0];
+p1d = arr2d;
+*(*p1d + j + i*sizeof(Array10)) = arr2d[i][j];
