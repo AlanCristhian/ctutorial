@@ -48,3 +48,10 @@ st_ptr = &my_struct;  /* assign the address of my_struct to st_ptr */
                         // .age : lookup the field age of the struct.
 str_ptr->age = 63;      // Syntax suggar to do the same than above.
 
+char my_name[] = "Alan"; // constant, 5 bytes
+char *my_name = "Alan"; // variable, 5 bytes plus the size of the pointer
+
+void f() {char a[2] = "a"}; // "a" is stored in the stack
+                            // 2 bytes of memory
+void g() {char *b = "b"};   // "b" could be anywhere,
+                            // 2 byest of memory plus the size of the pointer.
