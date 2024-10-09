@@ -65,3 +65,24 @@ int (*p1d)[10] == typedef int Array10[10]; Array10 *p1d;
 p1d = &arr2d[0];
 p1d = arr2d;
 *(*p1d + j + i*sizeof(Array10)) = arr2d[i][j];
+
+// Dynamic allocation
+
+// METHOD 1: 2nd dimension is known at compile time.
+#define COLS 5
+int nrows = 10;
+typedef int RowArray[COLS];
+RowArray *rptr;
+rptr = malloc(nrows * COLS * sizeof(int));
+int row, col;
+rptr[row];             *(multi + row);
+rptr[row][col] = 1;    *(*(multi + row) + col) = 1;
+
+// METHOD 2: no typedef
+#define COLS 5
+int nrows = 10;
+int (*xptr)[COLS];
+rptr = malloc(nrows * COLS * sizeof(int));
+int row, col;
+rptr[row];          *(rptr + row);
+rptr[row][col];     *(*(rptr + row) + col);
