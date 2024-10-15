@@ -86,3 +86,26 @@ rptr = malloc(nrows * COLS * sizeof(int));
 int row, col;
 rptr[row];          *(rptr + row);
 rptr[row][col];     *(*(rptr + row) + col);
+
+// stack = faster; heap = slower.
+
+/* METHOD 3: we don't know the number of
+ * elements in each row at compile time */
+int nrows = 6;
+int ncols = 10;
+int row;
+int **rcptr;
+row_ptr = malloc(nrows*sizeof(int *));  /* look at (int *). */
+if (row_ptr == NULL)
+{
+    puts("\nFailure to allocate room for pointers.\n");
+    exit(0);
+}
+for (row = 0; row < nrows; row ++) {
+    row_ptr[row] = malloc(ncols*sizeof(int)); /* look at (int) */
+    if (row_ptr[row] == NULL)
+    {
+        puts("\nFailure to allocate for row[%d]\n", row);
+        exit(0);
+    }
+}
