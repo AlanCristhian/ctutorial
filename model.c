@@ -68,6 +68,9 @@ p1d = arr2d;
 
 // Dynamic allocation
 
+/* With dynamically allocation of higher order arrays, we
+ * never need to know the first dimension at compile time. */
+
 // METHOD 1: 2nd dimension is known at compile time.
 #define COLS 5
 int nrows = 10;
@@ -89,6 +92,7 @@ rptr[row][col];     *(*(rptr + row) + col);
 
 // stack = faster; heap = slower.
 
+<<<<<<< HEAD
 /* METHOD 3: we don't know the number of
  * elements in each row at compile time */
 int nrows = 6;
@@ -109,3 +113,27 @@ for (row = 0; row < nrows; row ++) {
         exit(0);
     }
 }
+=======
+/* METHOD 3: we don't know the number of elements in each
+   row at compile time. The matrix is not a contiguous block */
+
+int nrows = 5;
+int ncols = 10;
+int row;
+int **row_ptr;
+row_ptr = malloc(nrows*sizeof(int *))
+if (row_ptr == NULL) {
+    printf("Failure to allocate room for row pointers.\n");
+    exit(0);
+}
+for (row = 0; row < nrows; row++) {
+    row_ptr[row] = malloc(ncols*sizeof(int));
+    if (row_ptr[row] == NULL) {
+        printf("Failure to allocate room for row = %d.\n", row);
+        exit(0);
+    }
+}
+
+// METHOD 4: contiguous block of memory
+
+>>>>>>> 76c181a (Add examples of how to allocate an array without knowing dimensions at compile time. Non contiguous memory block.)
