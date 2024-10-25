@@ -113,7 +113,7 @@ for (row = 0; row < nrows; row ++) {
         exit(0);
     }
 }
-=======
+
 /* METHOD 3: we don't know the number of elements in each
    row at compile time. The matrix is not a contiguous block */
 
@@ -121,7 +121,7 @@ int nrows = 5;
 int ncols = 10;
 int row;
 int **row_ptr;
-row_ptr = malloc(nrows*sizeof(int *))
+row_ptr = malloc(nrows*sizeof(int *))  // <-- here
 if (row_ptr == NULL) {
     printf("Failure to allocate room for row pointers.\n");
     exit(0);
@@ -135,5 +135,23 @@ for (row = 0; row < nrows; row++) {
 }
 
 // METHOD 4: contiguous block of memory
+int *rptr;
+int *aptr;
+int k;
+int nrows = 5;
+int ncols = 8;
+int row, col;
+aptr = malloc(nrows*ncols*sizeof(int));  // <-- here
+if (aptr == NULL) {
+    puts("\nFailure to allocate room for the array.\n");
+    exit(0);
+}
+rptr = malloc(nrows*sizeof(int *)); // <-- here
+if (rptr == NULL) {
+    puts("\nFailure to allocate room for pointers.\n");
+    exit(0);
+}
+for (k = 0; k < nrows; k++)
+    rptr[k] = aptr + (k*ncols);
 
->>>>>>> 76c181a (Add examples of how to allocate an array without knowing dimensions at compile time. Non contiguous memory block.)
+/* malloc is wastefull because it creates a linked list */

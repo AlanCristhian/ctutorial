@@ -13,13 +13,7 @@ int main(void)
         puts("Failure to allocate room for row pointers.\n");
         exit(0);
     }
-
-<<<<<<< HEAD
-    printf("\n\n\nIndex     Pointer(hex)    Pointer(dec)    Diff.(dec)");
-=======
     printf("Index    Pointer(hex)          Pointer(dec)    Diff.(dec)");
->>>>>>> 1f4cd94 (Initial commit.)
-
     for (row = 0; row < nrows; row++)
     {
         rowptr[row] = malloc(ncols*sizeof(int));
@@ -28,13 +22,6 @@ int main(void)
             printf("\nFailure to allocate for row[%d]\n", row);
             exit(0);
         }
-<<<<<<< HEAD
-        printf("\n%d        %p      %d", row, rowptr[row], rowptr[row]);
-        if (row > 0)
-            printf("        %d", (int)(rowptr[row] - rowptr[row - 1]));
-    }
-    printf("\n");
-=======
         printf("\n%d        %p        %d", row, rowptr[row], rowptr[row]);
         if (row > 0)
             printf("      %d", (int)(rowptr[row] - rowptr[row - 1]));
@@ -50,6 +37,5 @@ int main(void)
         printf("\n");
     }
 
->>>>>>> 1f4cd94 (Initial commit.)
     return 0;
 }
